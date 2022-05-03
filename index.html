@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booki</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!-- normalize css -->    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- icons -->
@@ -21,8 +21,8 @@
             
             <nav class="nav">
                 <ul class="nav_list">
-                    <li class="nav_item"><a class="nav_link" href="#">Hébergements</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Activités</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#hebergements">Hébergements</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
@@ -73,7 +73,7 @@
             </section>
             <!-- ---------------------------- main top end ----------------------------- -->
             <!-- --------------------------- main mid start ---------------------------- -->
-            <section class="wrapper wrapper-mid">
+            <section class="wrapper wrapper-mid" id="hebergements">
             <!-- ------------------------- hebergements cards -------------------------- -->
                 <div class="container cont-h-left">
                     <h3 class="card-title">Hébergements à Marseille</h3>
@@ -271,74 +271,129 @@
                     </div>
                 </div>
             </section>
-
-            <section class="wrapper wrapper-bot">                             
+            <!-- ---------------------------- main mid end ----------------------------- -->
+            <!-- -------------------------- main bottom start -------------------------- -->
+            <section class="wrapper wrapper-bot" id="activites">                             
                 <h3 class="card-title">Activités à Marseille</h3>
                 
                 <div class="container container-act">
-
+                    <!-- ------------------------------ activités left ------------------------------ -->
                     <div class="cont-a-left">
 
-                        <div class="card card-first">
-                            <div class="card-img">
-                                <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                            </div>
-                            <div class="card-bottom">
-                                <div class="card-text">
-                                    <p class="h-title">Vieux Port</p>
+                        <a class="card-link card-a-link" href="#">
+                            <div class="card card-first">
+                                <div class="card-img">
+                                    <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-text">
+                                        <p class="a-title">Vieux Port</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
+                        </a>
                     
 
                         <div class="card-wrap c-wrap-l">
-                            <div class="card cw-b">
+
+                            
+                            <a class="card cw-b" href="#">
                                 <div class="card-img">
-                                    <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                    <img class="img-fp" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                                 </div>
-                                <div class="card-bottom"></div>
-                            </div>
-                            <div class="card cw-s">
+                                <div class="card-bottom">
+                                    <div class="card-text">
+                                        <p class="a-title">Fort de Pomègue</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="card cw-s" href="#">
                                 <div class="card-img">
-                                    <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                    <img src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                                 </div>
-                                <div class="card-bottom"></div>
-                            </div>
+                                <div class="card-bottom">
+                                    <div class="card-text">
+                                        <p class="a-title">Iles du Frioul</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
                         </div>
                     </div>
-
+                    <!-- --------------------------- activités right --------------------------- -->
                     <div class="cont-a-right">
-                     
-                        <div class="card card-first">
-                            <div class="card-img">
-                                <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                        
+                        <a class="card-link card-a-link" href="#">
+                            <div class="card card-first">
+                                <div class="card-img">
+                                    <img src="img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                                </div>
+                                <div class="card-bottom">
+                                    <div class="card-text">
+                                        <p class="a-title">Parc National des Calanques</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-bottom"></div>
-                        </div>
+                        </a>
                        
 
                         <div class="card-wrap c-wrap-r">
-                            <div class="card">
+                            <a class="card" href="#">
                                 <div class="card-img">
-                                    <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                    <img src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                                 </div>
-                                <div class="card-bottom"></div>
-                            </div>
-                            <div class="card">
+                                <div class="card-bottom">
+                                    <div class="card-text">
+                                        <p class="a-title">Notre-Dame-de-la-Garde</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="card" href="#">
                                 <div class="card-img">
-                                    <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                                    <img src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                                 </div>
-                                <div class="card-bottom"></div>
-                            </div>
+                                <div class="card-bottom">
+                                    <div class="card-text">
+                                        <p class="a-title">Parc Longchamp</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                 </div>
             </section>
+            <!-- --------------------------- main bottom end --------------------------- -->
         </main>
-<!-- ----------------------------------------------------------------------- -->
-        <footer></footer>
-<!-- ----------------------------------------------------------------------- -->
+<!-- ------------------------------ MAIN END ------------------------------- -->
+<!-- ---------------------------- FOOTER START ----------------------------- -->
+        <footer>
+            <section class="wrapper footer-wrap">
+                <div class="container cont-footer">
+                    <ul class="footer-list">
+                        <li class="f-list-title">A propos</li>
+                        <li class="footer-link"><a href="#">Fonctionnement du site</a></li>
+                        <li class="footer-link"><a href="#">Conditions générales de vente</a></li>
+                        <li class="footer-link"><a href="#">Données et confidentialité</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li class="f-list-title">Nos Hébergements</li>
+                        <li class="footer-link"><a href="#">Charte qualité</a></li>
+                        <li class="footer-link"><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li class="f-list-title">Assistance</li>
+                        <li class="footer-link"><a href="#">Centre d'aide</a></li>
+                        <li class="footer-link"><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+<!-- ----------------------------- FOOTER END ------------------------------ -->
     </div>
 </body>
 

@@ -6,11 +6,11 @@
     --color-light: #DEEBFF;
     --color-second: #F2F2F2;
     --color-shadow: #D9D9D9;
-
+/* ---------------------------------- SIZES --------------------------------- */
     --radius-card: 20px;
     --radius-buttons: 15px;
 }
-
+/* -------------------------------------------------------------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -27,18 +27,17 @@ html{
 .sub_body{
     width: 100%;
     height: 100%;
-    padding: 0 55px;
 }
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
 header{
     width: 100%;
-    /* padding: 0px 15px; */
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 45px;
+    padding: 0 5%;
 }
 /* ---------------------------------- Logo ---------------------------------- */
 .logo{
@@ -74,6 +73,9 @@ header{
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
 /* -------------------------------------------------------------------------- */
+main{
+    padding: 0 5%;
+}
 .wrapper{
     margin-bottom: 40px;
 }
@@ -95,8 +97,6 @@ header{
     display: flex;
     align-items: center;
     border-radius: var(--radius-buttons);
-    /* width: 50%; */
-    /* border: 1px solid transparent; */
 }
 .search-icon{
     background-color: var(--color-second);
@@ -109,6 +109,7 @@ header{
     padding: 13px 18px;
     border-top: 1px solid var(--color-second);
     border-bottom: 1px solid var(--color-second);
+    font-weight: 700;
 }
 .search::placeholder{
     font-weight: 700;
@@ -155,13 +156,10 @@ header{
 }
 .filtre-btn:hover .filtre-txt{
     color: var(--color-main);
-    /* padding: 0 5px 0 15px; */
 }
 .filtre-btn:hover .filtre-icon{
     background-color: var(--color-main);
     color: var(--color-light);
-/*     order: 1;
-    left: 5px; */
 }
 .filtre-icon{
     color: var(--color-main);
@@ -215,11 +213,9 @@ header{
     background-color: var(--color-second);
     border-radius: 25px;
     padding: 3%;
-    /* padding: 40px 35px 0 35px; */
 }
 .cont-h-left{
     flex-basis: calc(66% - 10px);
-    /* margin-right: 40px; */
 }
 .cont-h-right{
     flex-basis: calc(33% - 10px);
@@ -231,18 +227,13 @@ header{
 .card-wrapper{
     display: flex;
     width: 100%;
-    flex-basis: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .card-link{
     text-decoration: none;
-    color: black;
     flex-basis: calc(33% - 15px);
     margin-bottom: 25px;
-}
-.card-link:hover .card{
-    transform: scale(1.1);
 }
 .card{
     background-color: white;
@@ -251,20 +242,19 @@ header{
     border-radius: var(--radius-card);
     box-shadow: 0 0 15px var(--color-shadow);
     transition: all .5s ease;
-
     width: 100%;
+    color: black;
 }
-.cont-h-left .card{
-    min-height: 200px;
-    height: 100%;
+.card:hover{
+    transform: scale(1.1);
 }
 .cont-h-left .card-bottom{
-    background-color: white;
     height: 35%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 4%;
 }
 .card-img{
     height: 115px;
@@ -278,8 +268,6 @@ header{
     border-top-right-radius: var(--radius-card);
 }
 .card-bottom{
-    /* background-color: white; */
-    /* height: 40%; */
     width: 100%;
 }
 .h-title{
@@ -288,13 +276,13 @@ header{
 }
 .h-price{
     font-size: 13px;
+    padding: 5px 0;
 }
 .l-price{
     font-weight: 700;
 }
 .h-icons{
     display: flex;
-    /* padding: 5px 0; */
 }
 .icon-star{
     font-size: 13px;
@@ -303,6 +291,7 @@ header{
 .h-sub{
     cursor: pointer;
     transition: all .5s ease;
+    margin-top: 2%;
 }
 .h-sub:hover{
     color: var(--color-main);
@@ -348,34 +337,44 @@ header{
     margin-bottom: 0;
 }
 /* -------------------------------- ACTIVITES ------------------------------- */
+/* ------------------------------- containers ------------------------------- */
 .container-act{
     display: flex;
     justify-content: space-between;
     height: 100%;
+    min-height: 320px;
+    max-height: 460px;
 }
 .cont-a-left, .cont-a-right{
     display: flex;
-    flex-basis: 48%;
+    flex-basis: 49%;
     justify-content: space-between;
-    height: 100%;
+    gap: 5%;
 }
 .c-wrap-r, .c-wrap-l{
     display: flex;
     flex-direction: column;
-    flex-shrink: 2;
-    flex-basis: 48%;
-    height: auto;
+    justify-content: space-between;
+    flex-basis: 50%;
+    height: 94%;
+    gap: 8%;
+    align-self: baseline;
 }
+/* ---------------------------------- cards --------------------------------- */
 .container-act .card{
     border: none;
-    /* flex-basis: 45%; */
+}
+.card-a-link{
+    width: 50%;
+    flex-basis: auto;
+    margin-bottom: 0;
 }
 .card.card-first{
-    width: 45%;
-    /* flex-basis: auto; */
+    height: 100%;
 }
-.c-wrap-r .card:first-child, .c-wrap-l .card:first-child{
-    margin-bottom: 15%;
+.c-wrap-r .card{
+    height: 49%;
+    min-height: 49%;
 }
 .container-act .card-img{
     height: 99%;
@@ -387,13 +386,74 @@ header{
     position: absolute;
     bottom: 0;
     background-color: white;
-    padding: 7% 0;
+    padding: 5% 0;
     border-bottom-right-radius: var(--radius-card);
     border-bottom-left-radius: var(--radius-card);
 }
 .card.cw-b{
-    height: 65%;
+    height: 59%;
+    min-height: 59%;
 }
 .card.cw-s{
-    height: 35%;
+    height: 39%;
+    min-height: 39%;
+}
+.a-title{
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 5%;
+}
+/* --------------------------------- FOOTER --------------------------------- */
+.wrapper.footer-wrap{
+    background-color: var(--color-second);
+    margin-bottom: 0;
+}
+.container.cont-footer{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.f-list-title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-link a{
+    color: black;
+    line-height: 30px;
+    transition: all .5s ease;
+}
+.footer-link a:hover{
+    color: var(--color-main);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   QUERIES                                  */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1280px){
+    .logo{
+        width: 101px;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+    .h-title, .h-price, .icon-star, .a-title{
+        font-size: initial;
+    }
+    .h-price{
+        padding: 2% 0;
+    }
+    .cont-h-left .card-bottom{
+        padding: 3%;
+        justify-content: space-between;
+    }
+    .card-text .h-title{
+        margin-bottom: 5px;
+    }
+    .container-act .card-bottom{
+        padding: 7% 0;
+    }
 }
