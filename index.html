@@ -21,7 +21,7 @@
             
             <nav class="nav">
                 <ul class="nav_list">
-                    <li class="nav_item"><a class="nav_link" href="#hebergements">Hébergements</a></li>
+                    <li class="nav_item"><a class="nav_link nav_link--active" href="#hebergements">Hébergements</a></li>
                     <li class="nav_item"><a class="nav_link" href="#activites">Activités</a></li>
                 </ul>
             </nav>
@@ -39,14 +39,18 @@
                 <div class="container container-search">
                     <i class="fa fa-solid fa-location-dot search-icon"></i>
                     <form>
-                        <input type="search" name="search" id="search" class="search" placeholder="Marseilles, France">
+                        <input type="search" name="search" id="search" class="search" placeholder="Marseille, France">
                     </form>
-                    <button class="search_button">Rechercher</button>
+                    <button class="search_button">
+                        <p>Rechercher</p>
+                        <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                    </button>
                 </div>
 
                 <div class="container container-filtres">
+                    <p class="filtre-title">Filtres</p>
                     <ul class="filter-list">
-                        <li><p class="filtre-title">Filtres</p></li>
+                        <!-- <li><p class="filtre-title">Filtres</p></li> -->
                         <li class="filtre-btn">
                             <i class="filtre-icon fa-solid fa-money-bill-wave"></i>
                             <p class="filtre-txt">Economique</p>
@@ -92,7 +96,7 @@
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +134,7 @@
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +143,7 @@
                         <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-img">
-                                    <img src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                                    <img class="img-test" src="img/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                                 </div>
                                 <div class="card-bottom">
                                     <p class="h-title">Hôtel de la mer</p>
@@ -148,8 +152,8 @@
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +172,7 @@
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +206,7 @@
                 <div class="container cont-h-right">
                     <div class="cont-title">
                         <h3>Les plus populaires</h3>
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star icon-star-title"></i>
                     </div>
                     <div class="card-wrapper">
 
@@ -242,7 +246,7 @@
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -263,7 +267,7 @@
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
                                         <i class="icon-star fa-solid fa-star"></i>
-                                        <i class="icon-star fa-regular fa-star"></i>
+                                        <i class="icon-star icon-star-grey fa-solid fa-star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +303,8 @@
                             
                             <a class="card cw-b" href="#">
                                 <div class="card-img">
-                                    <img class="img-fp" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                    <img class="img-d" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                                    <img class="img-m" src="img/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                                 </div>
                                 <div class="card-bottom">
                                     <div class="card-text">
@@ -380,7 +385,7 @@
                     </ul>
 
                     <ul class="footer-list">
-                        <li class="f-list-title">Nos Hébergements</li>
+                        <li class="f-list-title">Nos hébergements</li>
                         <li class="footer-link"><a href="#">Charte qualité</a></li>
                         <li class="footer-link"><a href="#">Soumettre votre hôtel</a></li>
                     </ul>
