@@ -222,7 +222,7 @@ form{
 .cont-h-left, .cont-h-right{
     background-color: var(--color-second);
     border-radius: 25px;
-    padding: 3%;
+    padding: 30px;
 }
 .cont-h-left{
     flex-basis: calc(66% - 10px);
@@ -324,7 +324,7 @@ form{
     width: 100%;
 }
 .cont-h-right .card-img{
-    height: 134px;
+    height: 138px;
     width: 100%;
     max-width: 125px;
 }
@@ -338,7 +338,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 9px;
+    padding: 8px;
 }
 .card-text .h-title{
     margin-bottom: 10px;
@@ -458,17 +458,20 @@ form{
         font-size: initial;
     }
     .h-price{
-        padding: 2% 0;
+        padding: 5px 0;
     }
+    /* .cont-h-left, .cont-h-right{
+        padding: 50px;
+    } */
     .cont-h-left .card-bottom{
-        padding: 3%;
+        padding: 8px;
         justify-content: space-between;
     }
     .card-text .h-title{
         margin-bottom: 5px;
     }
     .container-act .card-bottom{
-        padding: 7% 0;
+        padding: 20px 0;
     }
 }
 /* -------------------------------- tablettes ------------------------------- */
@@ -594,11 +597,12 @@ form{
         position: relative;
         left: -30px;
     }
-    .search_button p{
-        display: none;
+    .search_button{
+        font-size: 0;    
     }
     .search_button .icon-search{
         display: block;
+        font-size: initial;
     }
     .container.container-filtres{
         flex-direction: column;
@@ -711,8 +715,8 @@ form{
     }
 /* --------------------------------- footer --------------------------------- */
 }
-@media screen and (min-width: 500px){
-    .card-img{
+@media screen and (min-width: 500px) and (max-width: 991px){
+    .cont-h-left .card-img{
         height: 150px;
     }
     .cont-h-left .card-bottom{
